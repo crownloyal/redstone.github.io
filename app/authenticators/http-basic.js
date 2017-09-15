@@ -22,7 +22,7 @@ export default BaseAuthorizer.extend({
 	authenticate(identification, password) {
 
   		let basicAuth = `${identification}:${password}`,
-			loginURL = 'https://'+ basicAuth +'@redmine.mozy.lab.emc.com/issues.json';
+			loginURL = 'https://'+ basicAuth +'@bugs.ruby-lang.org/issues.json';
 
 
 		var promiseCall = Ember.$.ajax({

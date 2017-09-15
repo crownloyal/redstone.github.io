@@ -18,7 +18,7 @@ import DataAdapterMixin from 'ember-simple-auth/mixins/data-adapter-mixin';
 
 export default DS.RESTAdapter.extend(DataAdapterMixin, {
 
-	host: '', //enter host address here
+	host: 'https://bugs.ruby-lang.org', //enter host address here
 	namespace: '',
 	buildURL: function(record, suffix) {
 		return this._super(record, suffix) + '.json';

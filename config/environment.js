@@ -19,7 +19,7 @@ module.exports = function(environment) {
     },
 
     Config: {
-      redmineHost: 'redmine.mozy.lab.emc.com'
+      redmineHost: 'bugs.ruby-lang.org'
     }
 
   };
