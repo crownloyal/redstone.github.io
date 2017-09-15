@@ -1,0 +1,38 @@
+	<header class="row">
+		<div class="container">
+			<span class="one-half column">
+				<h2 id="title"><strong class="red">Red</strong>stone</h2>
+				<!-- span id="tagline" class="two columns">- Redmine tracking fast forward</span-->
+			</span>
+
+			<nav class="one-half column row">
+				{{!-- {{#if session.isAuthenticated}} --}}
+					{{link-to 'Dashboard' 'index' class='menu-fix columns'}}
+					{{link-to 'About' 'about' class='menu-fix columns'}}
+	    			<a onclick={{action 'invalidateSession'}} class="menu-fix columns">Logout</a>
+    			{{!-- {{else}}
+    				{{link-to 'About' 'about' class='one-third column'}}
+    				{{link-to 'Login' 'login' class='one-third column'}}
+  				{{/if}} --}}
+			</nav>
+		</div>
+	</header>
+	<section class="outlet-wrapper">
+		{{outlet}}
+	</section>
+	<footer class="row">
+		<div class="container">
+			<div class="two-thirds column">
+				<p>This page was created with love & <a href="http://emberjs.com">ember.js</a><br />
+				Powered by <a href="http://www.redmine.org/projects/redmine/wiki/Rest_api">Redmine REST API</a></p>
+				<p>
+					{{link-to 'What is this place?' 'about'}}
+				</p>
+			</div>
+			<p class="one-third column">
+				{{#link-to 'index' id="headerLogo"}}
+					<img id="logo" class="rightAligned"  src="assets/img/Redstone.png">
+				{{/link-to}}
+			</p>
+		</div>
+	</footer>
